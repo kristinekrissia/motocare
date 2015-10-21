@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/motocare.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/sha256.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="css/sweetalert.css">
+<link rel="stylesheet" href="css/themes/theme3.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css">
+<link rel="stylesheet" href="css/motocare.css">
+<style>
+	h3{color:white;}
+</style>
+</head>
+<body>
+<div data-role="page" id="homepage">
+</div>
+<div data-role="page" id="signinpage">
+<div data-role="header" data-position="fixed" data-tap-toggle="false">
+<h3>Welcome to MotoCare</h3>	
+</div>
+<div data-role="content" class="center-container">
+<img class="svg" src="img/motocare.svg" alt="logo" style="width:100%;max-width:300px;margin:0 auto;display:block;">
+<div data-role="header"><h3>Login</h3></div>
+<input type="text" placeholder="Username" style="text-align:center" id="username"  >
+<input type="password" placeholder="Password" style="text-align:center" id="password"  >
+
+<button data-transition="none" id="loginbtn">Sign In</button>
+<a href="#signuppage" class="ui-btn" style="display:block"id="signup-link" data-transition="none" style="background-color:#3498db">Signup New Account</a>
+</div>
+
+</div>
+<div data-role="page" id="signuppage">
+<div data-role="header" data-position="fixed" data-tap-toggle="false">
+<h3>Sign Up</h3>				
+</div>
+<div data-role="content" class="center-container">
+<img class="svg" src="img/motocare.svg" alt="signup-obstetrix-logo" width="100%" style="max-width:300px;margin:0 auto;display:block;">
+
+<div data-role="header"><h3>Sign Up</h3></div>
+<input type="text" placeholder="Username" style="text-align:center" name="username1" id="username1"  pattern="[a-zA-Z0-9]+">
+<input type="password" placeholder="Password" style="text-align:center" id="password1" >
+<input type="password" placeholder="Password" style="text-align:center" id="password2"  >
+
+<button id="signupbtn">Proceed</button>
+<a href="#signinpage" class=" ui-btn" style="display:block" data-transition="none">Back to Login</a>
+
+</div>
+
+</div> <!-- signup_page -->
+<div data-role="page" id="homepage">
+<div data-role="header" class="ui-shadow"><h3 >Homepage</h3></div>
+
+<div data-role="main" class="ui-content">
+<button id="logoutbtn">Logout</button>
+	<div class="ui-grid-a" style="margin:0 auto" >
+		<div class="ui-block-a" >
+		<button type="button" class="btn btn-success" style="background-color:#2ecc71"id="btnLess"> 
+		<a href="#newspage">
+		<img class="img-responsive" src="img/NEWSFEEDICON.png" alt="" style="width:100%">
+		</a>
+		</button>
+		</div>
+		<div class="ui-block-b">
+		<button type="button" class="btn btn-primary" style="background-color:#3498db"id="btnPractice"> 
+		<a href="#mappage">
+		<img class="img-responsive" src="img/MAPICON.png" alt="" style="width:100%">
+		</a>
+		</button>
+		</div>
+		<div class="ui-block-a">
+		<button type="button" class="btn btn-warning" style="background-color:#f1c40f"id="btnTriv"> 
+		<a href="#learnpage">
+		<img class="img-responsive" src="img/learnicon.png" alt="" style="width:100%">
+		</a>
+		</button>
+		</div>
+		<div class="ui-block-b">	
+	<button type="button" class="btn btn-danger" style="background-color:#e74c3c"id="btnForm"> 
+	<a href="#triviapage">
+	<img class="img-responsive" src="img/TRIVIAicon.png" alt="" style="width:100%">
+	</a>
+	</button></div>
+	</div>
+	<div class="container">
+    <div style="font-family: calibri;text-justify: inter-word;">
+      <p><h5 style="color:black!important;text-align:center">Your Safety is here Buddy.</h5></p>
+      </div>
+    </div>
+</center>    
+</div>
+</div><!-- homepage --><!-- homepage --><!-- homepage --><!-- homepage --><!-- homepage --><!-- homepage --><!-- homepage -->
+<div data-role="page" id="newspage">
+	<div data-role="header" class="ui-shadow"><h3>Newsfeed</h3></div>
+	<div data-role="main" class="ui-content">
+	<a href="#homepage" class="ui-btn">Go Back to Home</a>
+<a class="twitter-timeline" href="https://twitter.com/LTFRB_Chairman" data-widget-id="653943851036446720">Tweets by @LTFRB_Chairman</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
+<div data-role="page" id="mappage">
+
+	<div data-role="header" class="ui-shadow"><h3>Maps</h3></div>
+	<div data-role="main" class="ui-content">
+	<a href="#homepage" class="ui-btn">Go Back to Home</a>
+	<h1 style="text-align:center">Heap Map Goes Here</h1>
+	</div>
+</div>
+<div data-role="page" id="learnpage">
+	<div data-role="header"><h3>Learn</h3></div>
+	<div data-role="main" class="ui-content">
+	<a href="#homepage" class="ui-btn">Go Back to Home</a>
+
+
+
+<div data-role="collapsibleset">
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+		<h3><img src="img/learn-and-review.png" style="max-width:100px" >LEARN and REVIEW</h3>
+		<p>Provides pieces of information that are anchored to the International Standard for Driving. </p>
+		<a href="#learn1">Go to Link</a>
+	</div>
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+		<h3><img src="img/HOW.png" style="max-width:100px" >HOW TO GET YOUR DRIVER'S LICENSE</h3>
+		<p>Things you need to have before and during the processing of your license.</p>
+		<a href="#howto">Go to Link</a>
+	</div>
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+		<h3><img src="img/how-to-pass.png" style="max-width:100px" >HOW TO PASS YOUR DRIVING TEST</h3>
+		<p>Tips for  your driving test</p>
+		<a href="http://m.wikihow.com/Pass-Your-Driving-Test">Go to Link</a>
+	</div>
+</div>
+
+
+	</div>
+</div>
+<div data-role="page" id="learn1">
+	<div data-role="header"><h3>Learn and Review</h3></div>
+	<a href="#learnpage" class="ui-btn">Go Back to Learn</a>
+	<div data-role="main" class="ui-content">
+	<div data-role="collapsibleset">
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+		<h3>Getting Started</h3>
+		Things to know before you ride a motorcycle.</p>
+	</div>
+		<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+	<h3>Motorcycle Gear </h3>
+	<p>The only thing that will protect you from the road in an accident.</p>
+	</div>	
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+	
+	<h3 >How to ride a Motorcycle </h3 >
+	<p>It is important to approach learning how to ride with the respect and caution it deserves.</p>
+
+	</div>	
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+		<h3>Road Signs</h3>
+		<p>Traffic signs play a vital role in directing, informing and controlling
+road users' behaviour.</p>
+	</div>
+	
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+		<h3>Characteristics</h3>
+		<p>Motorcycle crashes </p>
+
+</div>
+</div>	
+</div>
+</div>
+<div data-role="page" id="howto">
+<div data-role="header"><h3>How to get your Driver's License</h3></div>
+<a href="#learnpage" class="ui-btn">Go Back to Learn</a>
+<div data-role="main" class="ui-content">
+
+<div data-role="collapsibleset">
+<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+	<h3>Student Permit</h3>
+	<div class="entry-content"><h5><b>Applicant must be:</b></h5>
+<ol>
+<li>At least 16 years old.</li>
+<li>Physically and mentally fit to operate a motor vehicle.</li>
+<li>Able to read and write in Filipino or English.</li>
+</ol>
+<h5><b>Requirements*:</b></h5>
+<ol>
+<li>Original and photocopy of birth certificate**</li>
+<li>If employed, Taxpayer's Identification Number (TIN)</li>
+<li>A filled out application for driver's license (ADL) [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">Download this form here</a>].</li>
+</ol>
+<p><em>*Applicants not yet 18 years old need a parent's or guardian's written consent with a photocopy of an ID card as proof of identity. If parent or guardian is not present, the written consent must be notarized.</em></p>
+<p><em>**If birth certificate is unavailable, any two will suffice:</em></p>
+<ul>
+<li>Joint affidavit of two disinterested persons who know the applicant and who can attest to his/her age and identity accompanied by non-availability of record from NSO or local civil registry office.</li>
+<li>Any legal document to prove his age and identity (e.g. GSIS, SSS, Passport or any government issued ID.)</li>
+</ul>
+<h5><b>Procedures:</b></h5>
+<ol>
+<li>Go to the Customer Service Counter to get your checklist of requirements and secure a Driver's License Application Form. [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">This form is available for download here</a>. You can accomplish this form prior to transacting your business at the LTO.] Get a queue number.</li>
+<li>When your number is called, go to the evaluator counter and submit all the required documents to have it checked for completeness and authenticity.</li>
+<li>When your name is called, go to where your photo and signature will be taken.</li>
+<li>Go to the cashier to pay the fees and to obtain an official receipt (OR).</li>
+<li>Proceed to the releasing counter with the OR and claim the student driver's permit.</li>
+</ol>
+<h5><b>Venue</b>:</h5>
+<p><span style="color: #222222;">Any licensing center/ district office with new driver's license transactions</span></p>
+<table width="158">
+<tbody>
+<tr>
+<td colspan="2" width="158"><strong>Fees and charges</strong></td>
+</tr>
+<tr>
+<td width="117">Student Permit (SP) Fee</td>
+<td width="41">P150.00</td>
+</tr>
+<tr>
+<td width="117">Application Fee</td>
+<td width="41">P100.00</td>
+</tr>
+<tr>
+<td width="117">Computer Fee</td>
+<td width="41">P67.63</td>
+</tr>
+<tr>
+<td width="117"><strong>TOTAL</strong></td>
+<td width="41">P317.63</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+</div>
+	<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+	<h3>Non-Professional License</h3>
+	<div class="content active" id="panel1-1">
+<div class="entry-content"><h5><b>Must be:</b></h5>
+<ol>
+<li>At least 17 years old*</li>
+<li>Physically and mentally fit to operate a motor vehicle</li>
+<li>Able to read and write in Filipino or English</li>
+<li>Clean, neat and presentable**</li>
+</ol>
+<p><em>*However, applicants below 18 years of age must be accompanied by one of the parents to the LTO District Office/Licensing Center nearest their place of residence. In case a parent/guardian is not present, written parental consent must be duly notarized.</em></p>
+<p><em>**Wearing of sando, sports shorts, and slippers during photo-taking and examinations will not be allowed.</em></p>
+<h5><b>Requirements:</b></h5>
+<ol>
+<li>Duly accomplished application form for driver's license (ADL) [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">Download this form here</a>].</li>
+<li>Valid student permit (at least one month old)</li>
+<li>Medical certificate with official receipt (from LTO accredited or Government physician)</li>
+<li>Negative drug test result (from a DOH accredited drug testing center &amp; Government Hospital)</li>
+<li>If employed: Taxpayer's Identification Number (TIN)</li>
+<li>Must have passed the written and practical examinations</li>
+</ol>
+<h5><b>Procedures:</b></h5>
+<ol>
+<li>Go to the customer service counter to get your checklist of requirements and secure a driver's license application form. [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">This form is available for download here</a>. You can accomplish this form prior to transacting your business at the LTO.] Get a queue number.</li>
+<li>When your number is called, go to the evaluator counter and submit all the required documents and have it checked for completeness and authenticity.</li>
+<li>When your name is called, go to where your photo and signature will be taken.</li>
+<li>Go to the cashier to pay the application fee.</li>
+<li>Go to the Examination Room for the lecture and written exam.</li>
+<li>After passing the written exam, wait for your name to be called for the practical exam.</li>
+<li>After passing the practical exam, go to the cashier when your name is called for payment of necessary fees and obtain an official receipt (OR).</li>
+<li>Go to the releasing counter, wait for your name to be called and present the OR and claim the card type license.</li>
+</ol>
+<h5><b>Venue:</b></h5>
+<p>Any licensing center/ district office with new driver's license transactions</p>
+<table width="130">
+<tbody>
+<tr>
+<td colspan="2" width="130"><strong>Fees and charges</strong></td>
+</tr>
+<tr>
+<td width="85">Application Fee</td>
+<td width="45">P100.00</td>
+</tr>
+<tr>
+<td width="85">Computer Fee</td>
+<td width="45">P67.63</td>
+</tr>
+<tr>
+<td width="85"><strong>TOTAL</strong></td>
+<td width="45">P167.63</td>
+</tr>
+<tr>
+<td width="85">License Fee</td>
+<td width="45">P350.00</td>
+</tr>
+<tr>
+<td width="85">Computer Fee</td>
+<td width="45">P67.63</td>
+</tr>
+<tr>
+<td width="85"><strong>TOTAL</strong></td>
+<td width="45">P417.63</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+	</div>
+
+<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+	<h3>Professional License</h3>
+	<div class="content active" id="panel1-1">
+<div class="entry-content"><h5><b>Must be:</b></h5>
+<ol>
+<li>At least 18 years old.</li>
+<li>Physically and mentally fit to operate a motor vehicle.</li>
+<li>Able to read and write in Filipino or English.</li>
+<li>Clean, neat and presentable.*</li>
+</ol>
+<p><em>*Must not be a drug user or alcoholic.</em></p>
+<p><em>**Must not be afflicted with any contagious disease or epilepsy.</em></p>
+<h5><b>Requirements:</b></h5>
+<ol>
+<li>Duly accomplished application form for driver's license (ADL) [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">Download this form here</a>].</li>
+<li>Valid student permit (at least five month old / NP - four month old)</li>
+<li>Medical certificate with official receipt (from LTO accredited or Government physician)</li>
+<li>Negative drug test result (from a DOH accredited drug testing center &amp; Government Hospital)</li>
+<li>Taxpayer's Identification Number (TIN)</li>
+<li>NBI or police or court clearance</li>
+<li>Must have passed the written and practical examinations</li>
+</ol>
+<h5><b>Procedures:</b></h5>
+<ol>
+<li>Go to the customer service counter to get your checklist of requirements and secure a driver's license application form. [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">This form is available for download here</a>. You can accomplish this form prior to transacting your business at the LTO.] Get a queue number.</li>
+<li>When your number is called, go to the evaluator counter and submit all the required documents and have it checked for completeness and authenticity.</li>
+<li>When your name is called, go to where your photo and signature will be taken.</li>
+<li>Go to the cashier to pay the application fee.</li>
+<li>Go to the Examination Room for the lecture and written exam.</li>
+<li>After passing the written exam, wait for your name to be called for the practical exam.</li>
+<li>After passing the practical exam, go to the Cashier when your name is called for payment of necessary fees and obtain an official receipt (OR).</li>
+<li>Go to the releasing counter, wait for your name to be called and present the OR and claim the card type license.</li>
+</ol>
+<h5><b>Venue:</b></h5>
+<p>Any licensing center/ district office with new driver's license transactions</p>
+<table width="130">
+<tbody>
+<tr>
+<td colspan="2" width="130"><strong>Fees and charges</strong></td>
+</tr>
+<tr>
+<td width="85">Application Fee</td>
+<td width="45">P100.00</td>
+</tr>
+<tr>
+<td width="85">Computer Fee</td>
+<td width="45">P67.63</td>
+</tr>
+<tr>
+<td width="85"><strong>TOTAL</strong></td>
+<td width="45">P167.63</td>
+</tr>
+<tr>
+<td width="85">License Fee</td>
+<td width="45">P350.00</td>
+</tr>
+<tr>
+<td width="85">Computer Fee</td>
+<td width="45">P67.63</td>
+</tr>
+<tr>
+<td width="85"><strong>TOTAL</strong></td>
+<td width="45">P417.63</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+	</div>
+
+<div data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false">
+	<h3>How to apply for a conductor's license</h3>
+	<div class="content active" id="panel1-1">
+<div class="entry-content"><h5><b>Must be:</b></h5>
+<ol>
+<li>At least 18 years old.</li>
+<li>Physically and mentally fit to operate a motor vehicle.</li>
+<li>Able to read and write in Filipino or English.</li>
+<li>Clean, neat and presentable.*</li>
+</ol>
+<p><em>*Must not be a drug user or alcoholic.</em></p>
+<p><em>**Must not be afflicted with any contagious disease or epilepsy.</em></p>
+<h5><b>Requirements:</b></h5>
+<ol>
+<li>Duly accomplished application form for driver's license (ADL) [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">Download this form here</a>].</li>
+<li>Proof of identity - any of the following:</li>
+</ol>
+<ul>
+<ul>
+<li>Original and photocopy of birth certificate</li>
+<li>Any legal or government issued document to prove his/her age and identity (SSS ID, Philhealth ID, GSIS ID, TIN ID, Pag-ibig ID, Company ID)</li>
+</ul>
+</ul>
+<ol start="3">
+<li>NBI or police or court clearance</li>
+<li>Medical certificate with official receipt (from LTO accredited or Government physician)</li>
+<li>Taxpayer's Identification Number (TIN)</li>
+<li>Must have passed the written examination</li>
+</ol>
+<h5><b>Procedures:</b></h5>
+<ol>
+<li>Proceed to the customer service counter to get your checklist of requirements and secure a driver's license application form. [<a href="http://www.gov.ph/downloads/2014/06jun/DOTC-LTO-Form-21.pdf">This form is available for download here</a>. You can accomplish this form prior to transacting your business at the LTO.] Get a queue number.</li>
+<li>When your number is called, proceed to evaluator counter and submit all the required documents and have it checked for completeness and authenticity.</li>
+<li>When your name is called, go to where your photo and signature will be taken.</li>
+<li>Go to the cashier to pay the application fee.</li>
+<li>Go to the examination room for the lecture and written exam.</li>
+<li>After passing the written examination, go to the cashier when your name is called for the necessary fees and obtain an official receipt (OR).</li>
+<li>Go to the releasing counter when your name is called, present the OR and claim the card type license.</li>
+</ol>
+<h5><b>Venue:</b></h5>
+<p><span style="color: #222222;">Any licensing center/ district office with new driver's license transactions</span></p>
+<table width="130">
+<tbody>
+<tr>
+<td colspan="2" width="130"><strong>Fees and charges</strong></td>
+</tr>
+<tr>
+<td width="85">Application Fee</td>
+<td width="45">P100.00</td>
+</tr>
+<tr>
+<td width="85">Computer Fee</td>
+<td width="45">P67.63</td>
+</tr>
+<tr>
+<td width="85"><strong>TOTAL</strong></td>
+<td width="45">P167.63</td>
+</tr>
+<tr>
+<td width="85">License Fee</td>
+<td width="45">P350.00</td>
+</tr>
+<tr>
+<td width="85">Computer Fee</td>
+<td width="45">P67.63</td>
+</tr>
+<tr>
+<td width="85"><strong>TOTAL</strong></td>
+<td width="45">P417.63</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+	</div>	
+
+</div>
+</div>
+</div>
+
+<div data-role="page" id="triviapage">
+	<div data-role="header" class="ui-shadow"><h3>Trivia</h3></div>
+	<a href="#homepage" class="ui-btn">Go Back to Home</a>
+	<div data-role="main" class="ui-content">
+	<div class="container" style="width:100%; max-width:600px">
+<div class="card card-inverse">
+  <img class="card-img" src="img/accident.jpg" data-src="holder.js/100%x270/#55595c:#373a3c/text:Card image" alt="Card image" style="width:100%;" >
+  <div class="card-img-overlay" style="text-align:center; background-color:black;background-color: rgba(0, 0, 0, 0.7);">
+   <div style="text-align:center"> <button class="btn btn-primary" onClick="roll()">Get another Trivia!</button></div>
+    <p class="card-text" id="triviapost" style="color:#ffffff;">Approximately three-fourths of these motorcycle accidents involved collision with another vehicle, which was most often a passenger automobile.</p>
+  </div>
+
+    <script>
+		var trivia = ['Approximately one-fourth of these motorcycle accidents were single vehicle accidents involving the motorcycle colliding with the roadway or some fixed object in the environment.','Vehicle failure accounted for less than 3% of these motorcycle accidents, and most of those were single vehicle accidents where control was lost due to a puncture flat.','In single vehicle accidents, motorcycle rider error was present as the accident precipitating factor in about two-thirds of the cases.','Roadway defects (pavement ridges, potholes, etc.) were the accident cause in 2% of the accidents; animal involvement was 1% of the accidents.','Weather is not a factor in 98% of motorcycle accidents.','Fuel system leaks and spills were present in 62% of the motorcycle accidents in the post-crash phase. This represents an undue hazard for fire.','The median pre-crash speed was 29.8 mph, and the median crash speed was 21.5 mph, and the one-in-a-thousand crash speed is approximately 86 mph.','Although the majority of the accident-involved motorcycle riders are male (96%), the female motorcycles riders are significantly overrepresented in the accident data.','The motorcycle riders involved in accidents are essentially without training; 92% were self-taught or learned from family or friends.','The likelihood of injury is extremely high in these motorcycle accidents-98% of the multiple vehicle collisions and 96% of the single vehicle accidents resulted in some kind of injury to the motorcycle rider; 45% resulted in more than a minor injury.','Groin injuries were sustained by the motorcyclist in at least 13% of the accidents, which typified by multiple vehicle collision in frontal impact at higher than average speed.','Approximately 50% of the motorcycle riders in traffic were using safety helmets but only 40% of the accident-involved motorcycle riders were wearing helmets at the time of the accident.','Sixty percent of the motorcyclists were not wearing safety helmets at the time of the accident. Of this group, 26% said they did not wear helmets because they were uncomfortable and inconvenient, and 53% simply had no expectation of accident involvement.','Less than 10% of the motorcycle riders involved in these accidents had insurance of any kind to provide medical care or replace property.'];
+		
+		var postnow = document.getElementById('triviapost');
+		
+		function roll(){	
+			var x = Math.floor(Math.random() * 13);
+			postnow.innerHTML = trivia[x];
+	}
+	$(document).ready(function() {
+		
+    });
+    </script>
+</div>
+
+	</div>
+</div>
+</body>
+</html>
